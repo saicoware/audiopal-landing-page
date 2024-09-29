@@ -3,6 +3,7 @@ import BenefitsSection from "../BenefitsSection/BenefitsSection.tsx";
 import HowItWorksSection from "../HowItWorksSection/HowItWorksSection.tsx";
 import PricingSection from "../PricingSection/PricingSection.tsx";
 import FeaturesSection from "../FeaturesSection/FeaturesSection.tsx";
+import TestimonialSection from "../TestimonialSection/TestimonialSection.tsx";
 
 const stats = [
   { id: 1, name: 'Developers on the platform', value: '8,000+' },
@@ -118,6 +119,9 @@ export default function LandingPage() {
 
         {/* Features Section */}
         <FeaturesSection />
+
+        {/* Testimonials Section */}
+        <TestimonialSection />
 
         {/* CTA section */}
         <div className="relative isolate mt-32 px-6 py-32 sm:mt-56 sm:py-40 lg:px-8">
