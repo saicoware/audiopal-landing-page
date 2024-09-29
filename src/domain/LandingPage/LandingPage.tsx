@@ -124,7 +124,7 @@ export default function LandingPage() {
         <TestimonialSection />
 
         {/* CTA section */}
-        <div className="relative isolate mt-32 px-6 py-32 sm:mt-56 sm:py-40 lg:px-8">
+        <div className="relative isolate mt-24 px-6 py-32 sm:mt-32 sm:py-40 lg:px-8">
           <svg
             aria-hidden="true"
             className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"

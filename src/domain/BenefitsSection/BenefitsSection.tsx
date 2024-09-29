@@ -26,7 +26,7 @@ const primaryFeatures = [
 
 export default function BenefitsSection() {
   return (
-    <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-16 lg:px-8">
+    <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 sm:py-32">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-base font-semibold leading-7 text-indigo-400">Transcribe Faster</h2>
         <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
