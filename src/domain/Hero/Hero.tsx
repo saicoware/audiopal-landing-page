@@ -59,10 +59,10 @@ const Hero = () => {
             </a>
           </div>
           <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Convert Your Voice Notes to Text Instantly with AudioPal
+            Convert Your Voice Notes to Text with AudioPal
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Transcribe your Telegram voice messages into readable text with just a few clicks. Accurate, fast, and affordable.
+            Transcribe your Telegram voice messages into readable text effortlessly. Accurate, fast, and affordable.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
             <a
