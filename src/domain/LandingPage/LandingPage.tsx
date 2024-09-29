@@ -4,13 +4,8 @@ import HowItWorksSection from "../HowItWorksSection/HowItWorksSection.tsx";
 import PricingSection from "../PricingSection/PricingSection.tsx";
 import FeaturesSection from "../FeaturesSection/FeaturesSection.tsx";
 import TestimonialSection from "../TestimonialSection/TestimonialSection.tsx";
+import FinalCta from "../FinalCta/FinalCta.tsx";
 
-const stats = [
-  { id: 1, name: 'Developers on the platform', value: '8,000+' },
-  { id: 2, name: 'Daily requests', value: '900m+' },
-  { id: 3, name: 'Uptime guarantee', value: '99.9%' },
-  { id: 4, name: 'Projects deployed', value: '12m' },
-]
 const footerNavigation = {
   solutions: [
     { name: 'Hosting', href: '#' },
@@ -40,7 +35,7 @@ const footerNavigation = {
     {
       name: 'Facebook',
       href: '#',
-      icon: (props) => (
+      icon: (props: HTMLOrSVGElement) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -53,7 +48,7 @@ const footerNavigation = {
     {
       name: 'Instagram',
       href: '#',
-      icon: (props) => (
+      icon: (props: HTMLOrSVGElement) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -66,7 +61,7 @@ const footerNavigation = {
     {
       name: 'X',
       href: '#',
-      icon: (props) => (
+      icon: (props: HTMLOrSVGElement) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
         </svg>
@@ -75,7 +70,7 @@ const footerNavigation = {
     {
       name: 'GitHub',
       href: '#',
-      icon: (props) => (
+      icon: (props: HTMLOrSVGElement) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -88,7 +83,7 @@ const footerNavigation = {
     {
       name: 'YouTube',
       href: '#',
-      icon: (props) => (
+      icon: (props: HTMLOrSVGElement) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -123,63 +118,8 @@ export default function LandingPage() {
         {/* Testimonials Section */}
         <TestimonialSection />
 
-        {/* CTA section */}
-        <div className="relative isolate mt-24 px-6 py-32 sm:mt-32 sm:py-40 lg:px-8">
-          <svg
-            aria-hidden="true"
-            className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-          >
-            <defs>
-              <pattern
-                x="50%"
-                y={0}
-                id="1d4240dd-898f-445f-932d-e2872fd12de3"
-                width={200}
-                height={200}
-                patternUnits="userSpaceOnUse"
-              >
-                <path d="M.5 200V.5H200" fill="none" />
-              </pattern>
-            </defs>
-            <svg x="50%" y={0} className="overflow-visible fill-gray-800/20">
-              <path
-                d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
-                strokeWidth={0}
-              />
-            </svg>
-            <rect fill="url(#1d4240dd-898f-445f-932d-e2872fd12de3)" width="100%" height="100%" strokeWidth={0} />
-          </svg>
-          <div
-            aria-hidden="true"
-            className="absolute inset-x-0 top-10 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
-          >
-            <div
-              style={{
-                clipPath:
-                  'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
-              }}
-              className="aspect-[1108/632] w-[69.25rem] flex-none bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
-            />
-          </div>
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Transcribe your voice notes
-              <br />
-              Start using our app today.
-            </h2>
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-              Stop wasting time on manual transcription. Let AudioPal handle your voice-to-text needs.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              >
-                Start Now on Telegram.
-              </a>
-            </div>
-          </div>
-        </div>
+        {/* Final CTA section */}
+        <FinalCta />
       </main>
 
       {/* Footer */}
