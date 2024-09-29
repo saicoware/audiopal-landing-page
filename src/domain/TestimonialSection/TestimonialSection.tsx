@@ -1,5 +1,5 @@
-import sofiaThumbNail from './images/female005.png';
-import carlosThumbNail from './images/male006.jpeg';
+import femaleThumbNail from './images/female005.png';
+import maleThumbNail from './images/male006.jpeg';
 
 export default function TestimonialSection() {
   return (
@@ -30,7 +30,7 @@ export default function TestimonialSection() {
               <figcaption className="mt-10 flex items-center gap-x-6">
                 <img
                   alt=""
-                  src={sofiaThumbNail}
+                  src={femaleThumbNail}
                   className="h-14 w-14 rounded-full bg-gray-800"
                 />
                 <div className="text-base">
@@ -59,7 +59,7 @@ export default function TestimonialSection() {
               <figcaption className="mt-10 flex items-center gap-x-6">
                 <img
                   alt=""
-                  src={carlosThumbNail}
+                  src={maleThumbNail}
                   className="h-14 w-14 rounded-full bg-gray-800"
                 />
                 <div className="text-base">
