@@ -1,4 +1,4 @@
-import {BoltIcon, CalendarDaysIcon, UsersIcon} from "@heroicons/react/24/outline";
+import { ClockIcon, ClipboardDocumentIcon, CurrencyDollarIcon } from "@heroicons/react/24/outline";
 
 const primaryFeatures = [
   {
@@ -6,21 +6,21 @@ const primaryFeatures = [
     description:
       'Stop wasting time manually typing out your voice messages. With Audio Pal, you can convert voice to text instantly and move on to your next task.',
     href: '#',
-    icon: BoltIcon,
+    icon: ClockIcon,
   },
   {
     name: 'Stay Organized',
     description:
       'Turn important conversations into easy-to-read text so you can keep track of instructions, tasks, and discussions effortlessly.',
     href: '#',
-    icon: UsersIcon,
+    icon: ClipboardDocumentIcon,
   },
   {
     name: 'Simple and Affordable',
     description:
       'At just 25 MXN or 1.25 USD per minute, Audio Pal offers a cost-effective solution to streamline your workflow without breaking the bank.',
     href: '#',
-    icon: CalendarDaysIcon,
+    icon: CurrencyDollarIcon,
   },
 ];
 
