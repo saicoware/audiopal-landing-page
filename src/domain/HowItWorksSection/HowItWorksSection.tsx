@@ -1,21 +1,21 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { DevicePhoneMobileIcon, SpeakerWaveIcon, WalletIcon } from '@heroicons/react/20/solid'
 
 const features = [
   {
     name: 'Open AudioPal in Telegram.',
     description:
       'No downloads or complicated setups are required. AudioPal works directly within Telegram, so you can start using it right away, whether you’re on mobile or desktop',
-    icon: CloudArrowUpIcon,
+    icon: DevicePhoneMobileIcon,
   },
   {
     name: 'Send Your Voice Message.',
     description: 'Just forward or send your voice message to AudioPal, and the bot will start processing it immediately. It can handle messages in various formats and multiple languages, making it versatile for users everywhere.',
-    icon: LockClosedIcon,
+    icon: SpeakerWaveIcon,
   },
   {
     name: 'Pay for Your Transcription.',
     description: 'AudioPal will provide a secure payment link. Once you complete the payment, the text version of your voice message will be delivered instantly within the same Telegram conversation, ready for you to use.',
-    icon: ServerIcon,
+    icon: WalletIcon,
   },
 ]
 
