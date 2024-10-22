@@ -1,3 +1,5 @@
+import chatImage from './../../assets/chat.jpeg';
+
 export default function MobileScreenshot() {
   return (
     <>
@@ -22,7 +24,7 @@ export default function MobileScreenshot() {
           clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
           transform="translate(24 24)"
         >
-          <img alt="" src="https://tailwindui.com/img/component-images/mobile-app-screenshot.png"/>
+          <img alt="" src={chatImage} />
         </foreignObject>
       </svg>
     </>
