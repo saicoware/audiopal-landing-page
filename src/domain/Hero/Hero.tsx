@@ -1,5 +1,5 @@
-import {ChevronRightIcon} from "@heroicons/react/20/solid";
 import MobileScreenshot from "../MobileScreenshot/MobileScreenshot.tsx";
+import audipalLogoImg from "../../assets/audipal-logo.png";
 
 const Hero = () => {
   return (
@@ -43,22 +43,22 @@ const Hero = () => {
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:pt-40">
         <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
           <img
-            alt="AudioPal"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-            className="h-11"
+            alt="AudioPal Logo"
+            src={audipalLogoImg}
+            className="rounded-full w-24 lg:w-32 lg:h-32"
           />
-          <div className="mt-24 sm:mt-32 lg:mt-16">
-            <a href="#" className="inline-flex space-x-6">
-              <span
-                className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20">
-                Latest updates
-              </span>
-              <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-300">
-                <span>Just shipped v1.4</span>
-                <ChevronRightIcon aria-hidden="true" className="h-5 w-5 text-gray-500"/>
-              </span>
-            </a>
-          </div>
+          {/*<div className="mt-24 sm:mt-32 lg:mt-16">*/}
+          {/*  <a href="#" className="inline-flex space-x-6">*/}
+          {/*    <span*/}
+          {/*      className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20">*/}
+          {/*      Latest updates*/}
+          {/*    </span>*/}
+          {/*    <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-300">*/}
+          {/*      <span>Just shipped v1.4</span>*/}
+          {/*      <ChevronRightIcon aria-hidden="true" className="h-5 w-5 text-gray-500"/>*/}
+          {/*    </span>*/}
+          {/*  </a>*/}
+          {/*</div>*/}
           <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Convert Your Voice Notes to Text with AudioPal
           </h1>
