@@ -1,4 +1,5 @@
 import { DevicePhoneMobileIcon, SpeakerWaveIcon, WalletIcon } from '@heroicons/react/20/solid'
+import MobileScreenshot from "../MobileScreenshot/MobileScreenshot.tsx";
 
 const features = [
   {
@@ -46,13 +47,14 @@ export default function HowItWorksSection() {
             </div>
           </div>
           <div className="flex items-start justify-end lg:order-first">
-            <img
-              alt="Product screenshot"
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-              width={2432}
-              height={1442}
-              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem]"
-            />
+            {/*<img*/}
+            {/*  alt="Product screenshot"*/}
+            {/*  src={chatImage}*/}
+            {/*  width={316}*/}
+            {/*  height={684}*/}
+            {/*  className="max-w-none rounded-xl shadow-xl ring-1 ring-white/10"*/}
+            {/*/>*/}
+            <MobileScreenshot/>
           </div>
         </div>
       </div>
