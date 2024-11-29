@@ -28,7 +28,7 @@ export default function BenefitsSection() {
   return (
     <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 sm:py-32">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-base font-semibold leading-7 text-indigo-400">Transcribe Faster</h2>
+        <h2 className="text-base font-semibold leading-7 text-emerald-500">Transcribe Faster</h2>
         <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Everything You Need to Convert Your Voice Notes to Text
         </p>
@@ -43,7 +43,7 @@ export default function BenefitsSection() {
           {primaryFeatures.map((feature) => (
             <div key={feature.name} className="flex flex-col">
               <dt className="text-base font-semibold leading-7 text-white">
-                <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
+                <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-600">
                   <feature.icon aria-hidden="true" className="h-6 w-6 text-white"/>
                 </div>
                 {feature.name}
@@ -51,7 +51,7 @@ export default function BenefitsSection() {
               <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
                 <p className="flex-auto">{feature.description}</p>
                 <p className="mt-6">
-                  <a href={feature.href} className="text-sm font-semibold leading-6 text-indigo-400">
+                  <a href={feature.href} className="text-sm font-semibold leading-6 text-emerald-500">
                     Learn more <span aria-hidden="true">→</span>
                   </a>
                 </p>

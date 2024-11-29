@@ -31,7 +31,7 @@ export default function PricingSection() {
             >
               {includedFeatures.map((feature) => (
                 <li key={feature} className="flex gap-x-3">
-                  <CheckIcon aria-hidden="true" className="h-6 w-5 flex-none text-indigo-400" />
+                  <CheckIcon aria-hidden="true" className="h-6 w-5 flex-none text-emerald-400" />
                   {feature}
                 </li>
               ))}
@@ -47,7 +47,7 @@ export default function PricingSection() {
                 </p>
                 <a
                   href="#"
-                  className="mt-10 block w-full rounded-md bg-indigo-500 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                  className="mt-10 block w-full rounded-md bg-emerald-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
                 >
                   Start Transcribing Now
                 </a>
