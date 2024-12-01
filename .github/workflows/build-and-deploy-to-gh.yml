@@ -40,18 +40,6 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      - name: Check for symlinks in dist directory
-        run: find ./dist -type l -ls
-
-      - name: List contents of dist directory
-        run: ls -alR ./dist
-
-      - name: Check for hard links in dist directory
-        run: find ./dist -type f -links +1 -exec ls -l {} \;
-
-      - name: Check dist directory size
-        run: du -sh ./dist
-
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
@@ -68,10 +56,15 @@ jobs:
       contents: read
       pages: write
       id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+#    environment:
+#      name: github-pages
+#      url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: github-pages
+          path: ./dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
