@@ -43,11 +43,20 @@ jobs:
       - name: Check for symlinks in dist directory
         run: find ./dist -type l -ls
 
+      - name: List contents of dist directory
+        run: ls -alR ./dist
+
+      - name: Check for hard links in dist directory
+        run: find ./dist -type f -links +1 -exec ls -l {} \;
+
+      - name: Check dist directory size
+        run: du -sh ./dist
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: ./dist
+          path: ./dist/**/*
 
   deploy:
     name: Deploy
