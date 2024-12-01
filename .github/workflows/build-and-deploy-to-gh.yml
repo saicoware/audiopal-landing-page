@@ -40,6 +40,9 @@ jobs:
       - name: Build the project
         run: npm run build
 
+      - name: Check for symlinks in dist directory
+        run: find ./dist -type l -ls
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
