@@ -1,3 +1,3 @@
-# AudioPal Bot - Telegram bot lanfing page
+# AudioPal Bot - Telegram bot landing page
 
 WIP
