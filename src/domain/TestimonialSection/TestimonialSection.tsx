@@ -1,4 +1,4 @@
-import femaleThumbNail from './images/female005.png';
+import femaleThumbNail from './images/female005.jpg';
 import maleThumbNail from './images/male006.jpeg';
 
 export default function TestimonialSection() {
